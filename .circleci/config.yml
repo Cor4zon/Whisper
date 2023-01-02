@@ -3,9 +3,10 @@ orbs:
   node: circleci/node@1.1.6
 
 workflows:
-  heroku_deploy:
+  whisper-workflow:
     jobs:
       - build
+      - code-linters
 
 jobs:
   build:
