@@ -21,6 +21,8 @@
 
 ## Whisper
 
+[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=shield)](https://app.circleci.com/pipelines/github/Cor4zon/Whisper)
+
 This app is developed to make chatting much private and easy without stealing your data!!
 
 ### ✨ Built With
