@@ -28,6 +28,9 @@ jobs:
     steps:
       - checkout:
           path: ~/client
+      - node/install-packages:
+            cache-path: ~/project/node_modules
+            override-ci-command: npm install
       - run:
           name: Eslint
           command: cd client && npm run lint --workspace=client
