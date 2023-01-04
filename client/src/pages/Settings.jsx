@@ -39,9 +39,7 @@ const Searching = () => {
     };
 
     return (
-        <div
-            className="flex justify-center items-center flex-col min-w-[calc(100%-120px)] p-2 gap-5 bg-primary min-h-full"
-        >
+        <div className="flex justify-center items-center flex-col min-w-[calc(100%-120px)] p-2 gap-5 bg-primary min-h-full">
             <Form onSubmit={handleSubmit} onChange={handleChange}>
                 <Divider className="text-white">Notifications</Divider>
                 <Form.Group controlId="notifications-enabled">

@@ -18,7 +18,7 @@ const AppContext = createContext({
     ...initialState,
     updateSettings: () => undefined,
     startSearch: () => undefined,
-    endSearch: () => undefined
+    endSearch: () => undefined,
 });
 
 export const useApp = () => {

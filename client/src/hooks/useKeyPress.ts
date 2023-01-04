@@ -21,14 +21,14 @@ const useKeyPress = (keys, callback, node = null) => {
         const targetNode = node ?? document;
 
         if (targetNode) {
-            targetNode.addEventListener("keydown", handleKeyPress);
+            targetNode.addEventListener('keydown', handleKeyPress);
         }
 
         return () => {
             if (targetNode) {
-                targetNode.removeEventListener("keydown", handleKeyPress);
+                targetNode.removeEventListener('keydown', handleKeyPress);
             }
-        }
+        };
     }, [handleKeyPress, node]);
 };
 

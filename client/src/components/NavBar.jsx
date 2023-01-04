@@ -103,7 +103,7 @@ const NavBar = ({ className }) => {
                     <NavLink to="/friends" className={getLinkStyle}>
                         <Icon
                             color="white"
-                            icon="la:user-friends" 
+                            icon="la:user-friends"
                             height="24"
                             width="24"
                         />

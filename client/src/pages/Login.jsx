@@ -78,7 +78,6 @@ const Login = () => {
                         Login Anonymously
                     </button>
                 </div>
-
             )}
         </div>
     );
