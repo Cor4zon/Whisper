@@ -17,6 +17,8 @@
   <img alt="contributors" src="https://img.shields.io/github/contributors/Dun-sin/Whisper?style=flat">
   <img alt="GitHub Repo forks" src="https://img.shields.io/github/forks/Dun-sin/Whisper?style=flat">
   <img alt="issues" src="https://img.shields.io/github/issues/Dun-sin/Whisper?style=flat"> </br>
+  <img src="https://circleci.com/gh/circleci/circleci-docs.svg?style=svg" alt="CircleCI" />}[https://circleci.com/gh/circleci/circleci-docs]
+
 </div>
 
 ## Whisper
