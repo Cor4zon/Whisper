@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  node: circleci/node@1.1.6
+  node: circleci/node@5.0.3
 
 workflows:
   whisper-workflow:
@@ -22,18 +22,17 @@ jobs:
           command: npm test
 
   code-linters:
-    working_directory: ~/client
     docker:
       - image: circleci/node:10.16.0
     steps:
-      - checkout:
-          path: ~/client
-      - node/install-packages:
-            cache-path: ~/project/node_modules
-            override-ci-command: npm install
+      - checkout
+      - run:
+          name: Install dependencies
+          command: npm install
       - run:
           name: Eslint
-          command: cd client && npm run lint --workspace=client
+          command: npm run lint --workspace=client
       - run:
           name: Prettier
           command: npm run format --workspace=client
+# VS Code Extension Version: 1.5.1
