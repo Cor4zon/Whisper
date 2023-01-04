@@ -30,7 +30,7 @@ jobs:
           path: ~/client
       - run:
           name: Eslint
-          command: npm run lint --workspace=client
+          command: cd client && npm run lint --workspace=client
       - run:
           name: Prettier
           command: npm run format --workspace=client
