@@ -22,10 +22,12 @@ jobs:
           command: npm test
 
   code-linters:
+    working_directory: ~/client
     docker:
       - image: circleci/node:10.16.0
     steps:
-      - checkout
+      - checkout:
+          path: ~/client
       - run:
           name: Eslint
           command: npm run lint --workspace=client
