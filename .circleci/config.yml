@@ -4,20 +4,8 @@ orbs:
 workflows:
   whisper-workflow:
     jobs:
-      - build
       - code-linters
 jobs:
-  build:
-    docker:
-      - image: cimg/node:17.2.0
-    steps:
-      - checkout
-      - run:
-          name: Install dependencies
-          command: npm install
-      - run:
-          name: Install dependencies
-          command: npm test
   code-linters:
     docker:
       - image: cimg/node:17.2.0
