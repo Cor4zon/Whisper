@@ -15,7 +15,7 @@ jobs:
           name: Install dependencies
           command: npm install
       - run:
-          name: Prettier
+          name: Eslint
           command: npm run lint:client
       - run:
           name: Prettier

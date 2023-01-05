@@ -9,10 +9,16 @@ import NavBar from 'components/NavBar';
 
 // Pages
 import Start from 'pages/Start';
-import Searching from 'pages/Searching';
+import Searching from "pages/Searching";
 import ComingSoon from 'pages/ComingSoon';
 import Login from 'pages/Login';
 import Settings from 'pages/Settings';
+
+/*eslint spaced-comment: ["error", "always"]*/
+
+//This is a comment with no whitespace at the beginning
+
+/*This is a comment with no whitespace at the beginning */
 
 function App() {
     const { isLoggedIn } = useAuth();
